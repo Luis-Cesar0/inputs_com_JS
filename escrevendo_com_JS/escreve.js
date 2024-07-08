@@ -45,20 +45,27 @@ let pessoas = [
 ]
 pessoas.forEach(element => {
     let imagem = document.createElement('img')
-    let lista = document.createElement("ul")
-    let nome = document.createElement("li")
-    let idade = document.createElement('li')
-    let salario = document.createElement('li')
-    let cargo = document.createElement('li')
+    let divPerfil = document.createElement("div")
+    let nome = document.createElement("h2")
+    let idade = document.createElement('h3')
+    let salario = document.createElement('h3')
+    let cargo = document.createElement('h3')
+    
 
     nome.innerHTML= `Nome: ${element.nome}`
     idade.innerHTML = `Idade: ${element.idade}`
     salario.innerHTML = `Salario: ${element.salario}`
     cargo.innerHTML =`Cargo: ${element.cargo}`
+    imagem.src = './img/perfil.png'
 
-    lista.appendChild(idade)
-    lista.appendChild(salario)
-    lista.appendChild(nome)
-    quadroBranco.appendChild(lista)
+    divPerfil.appendChild(nome)
+    divPerfil.appendChild(imagem)
+    divPerfil.appendChild(idade)
+    divPerfil.appendChild(salario)
+    divPerfil.appendChild(cargo)
+    
+    quadroBranco.appendChild(divPerfil) 
+    
+
 });
 

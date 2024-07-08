@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100vw;
+    height: 100vh;
+}
+#quadro-branco{
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+#quadro-branco div{
+    background-color: green;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+#quadro-branco img{
+    height: 100px;
+}
